@@ -1,10 +1,10 @@
 name: vulnpy
 
 on:
-  push:                                       
-    branches:
-      - master
-
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -81,6 +81,7 @@ jobs:
       - run: echo "This is a deploy step."
  
  
+
 
 
 
